@@ -1,0 +1,48 @@
+# Comunicação Simples com Canais em Go
+
+Este é um programa Go minimalista que ilustra o uso básico de canais para comunicação entre goroutines.
+
+## Descrição
+
+O programa cria um canal não bufferizado do tipo `string` chamado `messages`. Em seguida, ele inicia uma goroutine anônima que envia a string "ping" para este canal. Na função `main`, o programa recebe o valor do canal e o imprime no console.
+
+Este exemplo demonstra a natureza bloqueante das operações de envio e recebimento em canais não bufferizados: a goroutine remetente bloqueia até que outra goroutine receba o valor do canal, e a goroutine receptora bloqueia até que um valor seja enviado para o canal.
+
+## Pré-requisitos
+
+Para executar este código, você precisa ter o Go instalado em seu sistema. Você pode baixar e instalar o Go seguindo as instruções em [https://go.dev/doc/install](https://go.dev/doc/install).
+
+## Instalação
+
+Para executar este código:
+
+1.  Salve o código em um arquivo com a extensão `.go`, por exemplo, `canal.go`.
+2.  Abra um terminal ou prompt de comando.
+3.  Navegue até o diretório onde você salvou o arquivo.
+4.  Execute o seguinte comando para compilar e executar o programa:
+
+    ```bash
+    go run canal.go
+    ```
+
+## Uso
+
+Ao executar o programa, você verá a seguinte saída:
+
+```bash
+ping
+```
+
+Isso confirma que a goroutine enviou com sucesso a mensagem "ping" através do canal, e a função `main` a recebeu e imprimiu.
+
+## Contribuição
+
+Contribuições para este projeto são bem-vindas, especialmente se você tiver sugestões para exemplos mais complexos ou esclarecedores do uso de canais. Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Licença
+
+Este projeto está sob a Licença MIT. Consulte o arquivo `LICENSE` para obter mais detalhes.
+
+## Agradecimentos
+
+Nenhum agradecimento específico neste momento.
