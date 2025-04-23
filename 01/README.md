@@ -32,13 +32,13 @@ Após executar o programa, você verá a seguinte mensagem no seu terminal:
 ```bash
 Servidor iniciado na porta 8080...
 ```
-### ao acessar o endereco:
+ao acessar o endereco:
 
 ```bash
 http://localhost:8080/
 ```
 
-### Você deverá ver a seguinte mensagem na página:
+Você deverá ver a seguinte mensagem na página:
 
 ```bash
 Ola, mundo! Voce acesso a raiz do servidor.
