@@ -44,6 +44,12 @@ Você deverá ver a seguinte mensagem na página:
 Ola, mundo! Voce acesso a raiz do servidor.
 ```
 
+Caso esteja utilizando o FirebaseStudio:
+
+```bash
+  curl localhost:8080
+```
+
 Para parar o servidor, volte ao terminal onde o programa está rodando e pressione `Ctrl + C`.
 
 ## Contribuição
